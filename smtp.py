@@ -14,10 +14,10 @@ def send_emails(emails, schedule, forecast):
 
     # Send to entire email list
     for to_email, name in emails.items():
-        message = 'Subject: Welcome to the Circus!\n'
+        message = 'Subject: Welcome to India!\n'
         message += 'Hi ' + name + '!\n\n'
         message += forecast + '\n\n'
-        message += "Today's Performance Schedule:"
+        message += "Today's Schedule: "
         message += schedule + '\n\n'
         message += 'Hope to see you there!'
         server.sendmail(from_email, to_email, message)
